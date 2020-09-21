@@ -1,4 +1,21 @@
 /* media queries */
 @media screen and (max-width:576px) {
-  
+  .main-header {
+    grid-template-rows: auto auto;
+  }
+  .navbutton {
+    display: block;
+    justify-self: end;
+    align-self: center;
+  }
+  .navigation {
+    flex-direction: column;
+    grid-column: span 2;
+    min-width: 100%;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .navigation a {
+    border-bottom: solid 1px white;
+  }
 }
