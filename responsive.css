@@ -14,8 +14,12 @@
     min-width: 100%;
     overflow: hidden;
     max-height: 0;
+    transition: max-height 1s;
   }
   .navigation a {
     border-bottom: solid 1px white;
+  }
+  .navigation.open {
+    max-height: 50vh;
   }
 }
