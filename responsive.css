@@ -22,4 +22,28 @@
   .navigation.open {
     max-height: 50vh;
   }
+  main {
+    width: 100%;
+    grid-gap: 30px;
+  }
+  .twozy {
+    grid-column: span 12;
+    padding: 0;
+  }
+  .twozy p {
+    font-size: 1em;
+  }
+  .twozy h1 {
+    font-size: 1.5em;
+  }
+  .threezy {
+    grid-column: span 12;
+    padding: 0;
+  }
+  .fourzy {
+    grid-column: span 12;
+    padding: 0;
+    text-align: center;
+  }
+
 }
