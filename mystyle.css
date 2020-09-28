@@ -156,6 +156,26 @@ main{
     text-decoration: underline;
     border:1px solid black;
 }
+/* contact page */
+
+#contact-form {
+    grid-column: span 12;
+}
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+}
+.label {
+    display: block;
+}
+.input {
+    min-width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
 
 footer{
     width:100%;

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="responsive.css">
+        <script src="script.js"></script>
+    </head>
+    <body>   
+        <header class="main-header">
+            <img class="logo" src="assets/1200px-Wikivoyage-Logo-v3-en.svg.png">
+            <button class="navbutton">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#">Products</a>
+                    <nav class="submenu">
+                        <a href="cameras.html">Cameras</a>
+                        <a href="medical.html">Medical</a>
+                        <a href="printers.html">Printers</a>
+                    </nav>
+                </div>
+                <a href="index.html">News</a>
+                <a href="index.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>    
+            <form id="contact-form" method="POST" action="https://somewhere/formhandler">
+              <div class="form-container">
+                <h1>Contact Us</h1>
+                <label for="user-name" class="label">Your Name</label>
+                <input type="text" id="user-name" class="input" placeholder="Jane Smith" name="name">
+                <label for="user-email" class="label">Your Email</label>
+                <input type="email" id="user-email" class="input" placeholder="you@example.com" name="email">
+                <label for="message" class="label">Message</label>
+                <textarea id="message" class="input" cols="12" rows="5" placeholder="Hello there..."></textarea>
+                <div class="buttons">
+                  <button type="reset" class="form-button">Cancel</button>
+                  <button type="submit" class="form-button">Send</button>
+                </div>
+              </div>
+            </form>
+        </main>
+        
+        <footer>
+        </footer>
+
+    </body>
+
+
+</html>
