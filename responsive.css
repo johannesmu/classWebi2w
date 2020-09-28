@@ -22,6 +22,10 @@
   .navigation.open {
     max-height: 50vh;
   }
+  /* dropdown */
+  .navigation .submenu {
+    position: static;
+  }
   main {
     width: 100%;
     grid-gap: 30px;

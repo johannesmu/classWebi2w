@@ -48,9 +48,39 @@ body {
     padding: 1em;
     color: black;
     text-decoration: none;
+    display: block;
 }
 .navigation a:hover {
     color: blue;
+}
+.navigation .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: yellowgreen;
+    top: 100%;
+    z-index: 999;
+    box-shadow: 1px 1px 2px black;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s;
+}
+.navigation .dropdown {
+    position: relative;
+}
+.navigation .dropdown > a::after {
+    content: "\25bc";
+    margin-left: 0.5em;
+    font-size: 0.7em;
+}
+/* using hover to open dropdown */
+/* .navigation .dropdown:hover .submenu {
+   max-height: 300px; 
+} */
+
+/* using javascript to open */
+.navigation .dropdown.open .submenu{
+    max-height: 300px;
 }
 
 main{
